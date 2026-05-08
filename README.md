@@ -1,10 +1,10 @@
-# 🚀 SI-Bitacora4-AccesoRemoto: Administrando en la "Nube"
+#  SI-Bitacora4-AccesoRemoto: Administrando en la "Nube"
 
 Este repositorio contiene la documentación y configuración de la **Bitácora 4**, centrada en la gestión de servidores remotos, seguridad criptográfica y entornos gráficos distribuidos. 
 
 El objetivo principal es transformar la visión del servidor como una "caja física" a un **servicio en red seguro**, utilizando contenedores Docker para simular una infraestructura real en un centro de datos.
 
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 - [Requisitos Previos](#requisitos-previos)
 - [Despliegue de la Infraestructura](#despliegue-de-la-infraestructura)
 - [Fase 1: SSH - Forjando la Llave Maestra](#fase-1-ssh---forjando-la-llave-maestra)
@@ -15,7 +15,7 @@ El objetivo principal es transformar la visión del servidor como una "caja fís
 
 ---
 
-## 🛠️ Requisitos Previos
+##  Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado:
 * [Docker](https://www.docker.com/) y Docker Compose.
@@ -25,7 +25,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 ---
 
-## 🏗️ Despliegue de la Infraestructura
+##  Despliegue de la Infraestructura
 
 Para garantizar un entorno idéntico y reproducible, hemos utilizado **Docker Compose**.
 
@@ -43,7 +43,7 @@ Para garantizar un entorno idéntico y reproducible, hemos utilizado **Docker Co
 
 ---
 
-## 🔑 Fase 1: SSH - Forjando la Llave Maestra
+##  Fase 1: SSH - Forjando la Llave Maestra
 
 El acceso por contraseña es vulnerable a ataques de fuerza bruta. Hemos implementado **criptografía de clave pública** utilizando el algoritmo **ED25519**.
 
