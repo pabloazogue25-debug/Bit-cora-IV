@@ -4,51 +4,14 @@ Este repositorio contiene la documentación y configuración de la **Bitácora 4
 
 El objetivo principal es transformar la visión del servidor como una "caja física" a un **servicio en red seguro**, utilizando contenedores Docker para simular una infraestructura real en un centro de datos.
 
-##  Tabla de Contenidos
-- [Requisitos Previos](#requisitos-previos)
-- [Despliegue de la Infraestructura](#despliegue-de-la-infraestructura)
-- [Fase 1: SSH - Forjando la Llave Maestra](#fase-1-ssh---forjando-la-llave-maestra)
-- [Fase 2: RDP y Entorno Gráfico](#fase-2-rdp-y-entorno-gráfico)
-- [Mapeo de Servicios y Puertos](#mapeo-de-servicios-y-puertos)
-- [Solución de Problemas](#solución-de-problemas)
-- [Reflexión Final](#reflexión-final)
+<img width="624" height="213" alt="image" src="https://github.com/user-attachments/assets/8f83e697-12af-4ca8-9a08-5e5fa0aef91a" />
+<img width="661" height="363" alt="image" src="https://github.com/user-attachments/assets/dde842b9-4236-4518-9da9-5b35c1e3263b" />
+<img width="397" height="241" alt="image" src="https://github.com/user-attachments/assets/29c97751-c214-4e61-9e0c-2bbf8af61cc7" />
+<img width="578" height="229" alt="image" src="https://github.com/user-attachments/assets/a174998d-1723-4289-ae4a-f048113716d4" />
+<img width="551" height="488" alt="image" src="https://github.com/user-attachments/assets/aa91852a-bccc-4dab-b546-36927e4e7eb3" />
+<img width="831" height="775" alt="image" src="https://github.com/user-attachments/assets/d2256fde-03f2-48fd-bd4d-0c23f8073187" />
 
----
 
-##  Requisitos Previos
 
-Antes de comenzar, asegúrate de tener instalado:
-* [Docker](https://www.docker.com/) y Docker Compose.
-* Un cliente SSH (OpenSSH).
-* Un cliente de Escritorio Remoto (MSTSC en Windows o Remmina en Linux).
-* Git para el control de versiones.
 
----
 
-##  Despliegue de la Infraestructura
-
-Para garantizar un entorno idéntico y reproducible, hemos utilizado **Docker Compose**.
-
-1.  Crea el directorio de trabajo: `mkdir SI_Bitacora4_TuNombre`.
-2.  Dentro de la carpeta, inicia los servicios:
-    ```bash
-    docker-compose up -d
-    ```
-3.  Verifica el estado de los contenedores:
-    ```bash
-    docker ps
-    ```
-
-> **Nota:** Deberías ver dos servicios activos: uno para SSH (puerto 2222) y otro para la interfaz gráfica Webtop (puertos 3000 y 3389).
-
----
-
-##  Fase 1: SSH - Forjando la Llave Maestra
-
-El acceso por contraseña es vulnerable a ataques de fuerza bruta. Hemos implementado **criptografía de clave pública** utilizando el algoritmo **ED25519**.
-
-### Paso A: Conexión Inicial
-Conexión mediante contraseña para verificar visibilidad:
-```bash
-ssh alumno@localhost -p 2222
-# Contraseña: sistemas_informaticos
