@@ -38,4 +38,4 @@ Además, la naturaleza de Docker como Infraestructura como Código (IaC) garanti
 
 # **2\.*Estimación de costes de infraestructuras*
 
-![alt text](image.png)
+![alt text](assests/image.png)
