@@ -20,6 +20,9 @@
 [**2\.Estimación de Costes de Infraestructura	2**](#heading=)
 
 [**3\.Estrategia de Despliegue y Comunicación**](#heading=)
+
+[**4\.Justificación**](#heading=)
+
 # **1\. Análisis de Necesidades**
 
 ## **1.1 Contexto y Problemática Actual**
@@ -53,3 +56,8 @@ El código se trasladará desde nuestro servidor local hacia el servidor de prod
 
 El equipo trabajará en Discord mediante un canal dedicado a las incidencias. Se creará una automatización para enviar notificaciones a los miembros del canal cuando haya un error.Para ello todos deben tener activadas las notificaciones en sus dispositivos.
 
+# **4.*Estrategia de Despliegue y Comunicación*
+
+La estrategia de centralizar y securizar los servicios de administración mediante Docker. El autor analiza cómo la contenedorización con Docker se ha convertido en una herramienta indispensable para desplegar servicios de red de forma ágil, segura y eficiente. En su estudio, destaca que esta tecnología permite aislar por completo cada servicio (evitando conflictos entre dependencias del sistema) y optimizar el uso del hardware, logrando que entornos complejos funcionen con un consumo mínimo de recursos en comparación con las máquinas virtuales clásicas. Esta investigación avala directamente el diseño de nuestro proyecto, justificando técnicamente el uso de contenedores independientes para el ecosistema Guacamole, lo que garantiza una infraestructura robusta, fácil de mantener y con un coste de computación en la nube reducido.
+
+[1] T. Combe, A. Antony, and R. Di Pietro, "To Docker or Not to Docker: A Security Perspective," IEEE Cloud Computing, vol. 3, no. 5, pp. 54-62, Sept.-Oct. 2016, doi: 10.1109/MCC.2016.100.
