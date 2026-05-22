@@ -17,6 +17,8 @@
 
 [1.3 Justificación Técnica y Beneficios (TCO)	2](#heading=)
 
+[**2\.Estimación de Costes de Infraestructura	2**](#heading=)
+
 # **1\. Análisis de Necesidades**
 
 ## **1.1 Contexto y Problemática Actual**
@@ -33,3 +35,7 @@ Al centralizar todo el tráfico de administración a través de un único túnel
 
 La elección de esta arquitectura frente a la conexión directa por RDP se fundamenta en la optimización de recursos y la seguridad multicapa. Mientras que RDP directo requiere una gestión compleja de certificados y clientes específicos, la solución propuesta permite una gestión de identidad centralizada. Desde el punto de vista del Coste Total de Propiedad (TCO), el uso de software bajo licencias permisivas (Apache License 2.0) elimina las barreras financieras asociadas a las licencias de acceso remoto propietarias, permitiendo una escalabilidad horizontal sin costes adicionales por usuario.  
 Además, la naturaleza de Docker como Infraestructura como Código (IaC) garantiza que el Plan de Recuperación ante Desastres (DRP) sea extremadamente ágil; el entorno completo puede ser recreado en un nuevo nodo en cuestión de minutos. Tal como indica la literatura académica en ingeniería de software (Drake, 2008), un análisis de requisitos y una especificación precisa son determinantes para evitar fallos críticos en entornos de producción. En consecuencia, esta implementación no solo resuelve una necesidad técnica inmediata, sino que establece un estándar de profesionalidad y seguridad alineado con las demandas del sector tecnológico actual.
+
+# **2\.*Estimación de costes de infraestructuras*
+
+![alt text](image.png)
