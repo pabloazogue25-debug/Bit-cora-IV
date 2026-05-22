@@ -38,7 +38,8 @@ La elección de esta arquitectura frente a la conexión directa por RDP se funda
 Además, la naturaleza de Docker como Infraestructura como Código (IaC) garantiza que el Plan de Recuperación ante Desastres (DRP) sea extremadamente ágil; el entorno completo puede ser recreado en un nuevo nodo en cuestión de minutos. Tal como indica la literatura académica en ingeniería de software (Drake, 2008), un análisis de requisitos y una especificación precisa son determinantes para evitar fallos críticos en entornos de producción. En consecuencia, esta implementación no solo resuelve una necesidad técnica inmediata, sino que establece un estándar de profesionalidad y seguridad alineado con las demandas del sector tecnológico actual.
 
 # **2\.*Estimación de costes de infraestructuras*
-<img width="1331" height="369" alt="image" src="https://github.com/user-attachments/assets/f7b94c80-87da-4d09-84fc-b19a3f6ac71e" />
+<img width="1332" height="434" alt="Captura de pantalla 2026-05-22 143326" src="https://github.com/user-attachments/assets/11a28c68-cff3-494b-bb65-1b086195604a" />
+
 
 # **3.*Estrategia de Despliegue y Comunicación*
 
