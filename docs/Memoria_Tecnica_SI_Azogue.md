@@ -19,6 +19,7 @@
 
 [**2\.Estimación de Costes de Infraestructura	2**](#heading=)
 
+[**3\.Estrategia de Despliegue y Comunicación**](#heading=)
 # **1\. Análisis de Necesidades**
 
 ## **1.1 Contexto y Problemática Actual**
@@ -38,4 +39,17 @@ Además, la naturaleza de Docker como Infraestructura como Código (IaC) garanti
 
 # **2\.*Estimación de costes de infraestructuras*
 <img width="1331" height="369" alt="image" src="https://github.com/user-attachments/assets/f7b94c80-87da-4d09-84fc-b19a3f6ac71e" />
+
+# **3.*Estrategia de Despliegue y Comunicación*
+
+El código se trasladará desde nuestro servidor local hacia el servidor de producción mediante SFTP (SSH File Transfer Protocol).Ya que es el método manual o semiautomático más recomendado. Reemplaza al antiguo FTP (que envía las contraseñas en texto claro) utilizando el protocolo SSH para cifrar toda la comunicación.
+
+**Por qué es seguro:**
+ - Cifrado extremo a extremo: Los datos viajan cifrados, impidiendo que sean interceptados.
+ - Autenticación robusta: Permite el uso de pares de claves criptográficas  en lugar de contraseñas, lo que elimina los ataques de fuerza bruta.
+ - Control de accesos: Se puede configurar para que los usuarios queden "enjaulados" únicamente en el directorio de la aplicación, evitando que accedan al resto del servidor.
+
+#### **3.1 Mensajería**
+
+El equipo trabajará en Discord mediante un canal dedicado a las incidencias. Se creará una automatización para enviar notificaciones a los miembros del canal cuando haya un error.Para ello todos deben tener activadas las notificaciones en sus dispositivos.
 
